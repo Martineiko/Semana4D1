@@ -52,7 +52,36 @@ public class Main
 		System.out.println(cadena.toLowerCase());
 		//float flotante = 0.0f;
 		
+		//Arrays
+		String [] meses = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+		String [] semana = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};		
+		//Objetivo muestra enero, julio, noviembre, diciembre y marzo en la misma linea
+		System.out.println(meses[0]+ " "+meses[6]+" "+meses[10]+" "+meses[11]+" "+meses[2]+" "+semana[0]+" "+semana[4]+" "+semana[1]);
 		
+		boolean x = true;
+		boolean az = false;
+		System.out.println(x==az);
+		if(x || az){
+			System.out.println("Son iguales");
+		} else{
+			System.out.println("No pues achi como si son diferentes");
+		}
+		System.out.println("\n \n");
+		
+		int testscore = 95; 
+		char grade; 
+		if (testscore >= 90) { 
+			grade = 'A'; 
+			} else if (testscore >= 80) { 
+				grade = 'B'; 
+				} else if (testscore >= 70) { 
+					grade = 'C'; 
+					} else if (testscore >= 60) { 
+						grade = 'D'; 
+						} else { 
+							grade = 'F'; 
+							} 
+		System.out.println("Grade = " + grade);
 	}
 
 }
