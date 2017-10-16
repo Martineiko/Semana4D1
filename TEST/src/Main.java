@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 //Inicia Proyecto
 public class Main 
 {
@@ -5,6 +7,7 @@ public class Main
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
+		System.out.println("///////////////Hola Mundo\\\\\\\\\\\\\\");
 		System.out.println("Hello, World");
 		//Imprime un Hello World en consolita
 		
@@ -13,6 +16,7 @@ public class Main
 		int resultado = 0;
 		resultado = a + b;
 		//Suma
+		System.out.println("///////////////SUMA\\\\\\\\\\\\\\");
 		System.out.println("Suma: "+resultado);
 		
 		float d = 3.1459f;
@@ -20,7 +24,7 @@ public class Main
 		float resf = 0.0f;
 		
 		resf = d + c;
-		
+		System.out.println("///////////////Suma de Flotantes\\\\\\\\\\\\\\");
 		System.out.println("Suma de flotante: "+resf);
 		
 		
@@ -36,7 +40,7 @@ public class Main
 		String cadena = "Parangaricutirimicuaro";
 		String cadenaCesar = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
 		int espacio =3;
-		System.out.println("//Cadenas//");
+		System.out.println("///////////////Cadenas\\\\\\\\\\\\\\");
 		System.out.println("\n");
 		System.out.println(cadena);
 		//Moverse por el arreglo de la cadena
@@ -67,7 +71,8 @@ public class Main
 			System.out.println("No pues achi como si son diferentes");
 		}
 		System.out.println("\n \n");
-		
+		System.out.println("\n \n");
+		System.out.println("/////////////// IF / ELSE \\\\\\\\\\\\\\");
 		int testscore = 95; 
 		char grade; 
 		if (testscore >= 90) { 
@@ -82,6 +87,63 @@ public class Main
 							grade = 'F'; 
 							} 
 		System.out.println("Grade = " + grade);
+		System.out.println("\n \n");
+		//Switch de nombres mexicanos
+		System.out.println("///////////////SWITCH\\\\\\\\\\\\\\");
+		String opcion = "";
+		System.out.println("Escribe el nombre mas mexicano de una femina");
+		//Instancia la clase que lee de teclado
+		Scanner lector = new Scanner(System.in);
+		//Leer de teclado hasta dar enter
+		opcion = lector.nextLine();
+		/*switch(opcion)
+		{
+		case "Chana":
+			System.out.println("Chana");
+			break;
+		case "Chona":
+			System.out.println("Chona");
+			break;
+		case "Juana":
+			System.out.println("Juana");
+			break;
+		case "Pancha":
+			System.out.println("Pancha");
+			break;
+			default:
+				System.out.println("Lo sentimos el nombre que ingresaste arrojo: ");
+				System.out.println("Ninguno");
+				break;
+		}
+		*/
+		System.out.println("///////////////EQUALS\\\\\\\\\\\\\\");
+		String cadenas = "Hola";
+		//String cadenota = "hola";
+		
+		if(cadenas.equals("Hola"))
+		{
+			System.out.println("Son iguales");
+		}else{
+			System.out.println("No son iguales");
+		}
+		System.out.println("///////////////FOR\\\\\\\\\\\\\\");
+		int arr[]={12,23,44,56,78};
+		for(int i:arr){
+		System.out.println(i);
+		}
+		System.out.println("///////////////WHILE LOOP\\\\\\\\\\\\\\");
+		int cont = 0;
+		
+		while(cont < meses.length){
+			System.out.println((cont+1)+" : "+meses[cont]);
+			cont++;
+		}
+		System.out.println("//////////////////////Llamada de clase para el uso de main\\\\\\\\\\\\\\\\\\\\");
+		cuentaPalabras cPib = new cuentaPalabras(7);
+		cPib.cuentaLetras();
+		
+		cuentaPalabras ctext = new cuentaPalabras();
+		ctext.cuentaHistorias();
 	}
 
 }
