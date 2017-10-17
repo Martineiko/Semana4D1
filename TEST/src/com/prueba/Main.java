@@ -1,13 +1,19 @@
 package com.prueba;
+import java.io.IOException;
 import java.util.Scanner;
+import com.salon4.Sacapuntas;
+
 
 //Inicia Proyecto
 public class Main 
 {
-
+	public static int id = 0;
+	public static long id2 = 0;
+	public static final int valorFinal = 9;
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
+		id = 25;
 		System.out.println("///////////////Hola Mundo\\\\\\\\\\\\\\");
 		System.out.println("Hello, World");
 		//Imprime un Hello World en consolita
@@ -94,9 +100,9 @@ public class Main
 		String opcion = "";
 		System.out.println("Escribe el nombre mas mexicano de una femina");
 		//Instancia la clase que lee de teclado
-		Scanner lector = new Scanner(System.in);
+		//Scanner lector = new Scanner(System.in);
 		//Leer de teclado hasta dar enter
-		opcion = lector.nextLine();
+		//opcion = lector.nextLine();
 		/*switch(opcion)
 		{
 		case "Chana":
@@ -175,6 +181,31 @@ public class Main
 			System.out.println("Bloque finally");
 		}
 		System.out.println("Saliendo del try and catch");
+		System.out.println("\nLlamando a la clase Estudiante");
+		//Instanciacion de la clase, uso del constructor sobrecargado
+		Estudiante estudiHambre = new Estudiante(2,"Juancho");
+		//Obtener los datos
+		System.out.println(estudiHambre.getCodigo()+" : "+estudiHambre.getNombre());
+		estudiHambre.setCodigo(4);
+		estudiHambre.setNombre("Gloria");
+		System.out.println("\n"+estudiHambre.getCodigo()+" : "+estudiHambre.getNombre());
+		//LLamar al metodo sin modificicacion de acceso
+		estudiHambre.probar();
+		
+		Sacapuntas sacaPuntas = new Sacapuntas(456,"filo");	
+		id2++;
+		System.out.println("ID del desorden: "+id2);
+		//probarEstatico();
+		
+		
+		
+	}//Fin del main
+	//Metodo estatico
+	public static void probarEstatico()
+	{
+		id = 99999;
+		System.out.println(id);
+		//main(null);
 	}
 
 }

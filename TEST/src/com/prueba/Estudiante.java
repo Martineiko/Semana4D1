@@ -43,4 +43,8 @@ public class Estudiante {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+	void probar()
+	{
+		System.out.println("Metodo sin modificacion de acceso");
+	}
 }
