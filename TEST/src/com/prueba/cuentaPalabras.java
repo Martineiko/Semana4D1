@@ -1,3 +1,4 @@
+package com.prueba;
 
 public class cuentaPalabras 
 {
@@ -40,6 +41,6 @@ public class cuentaPalabras
 	
 	public void cuentaHistorias()
 	{
-		System.out.println("Te contare una linda historia");
+		System.out.println("Te contare una linda historia...");
 	}
 }

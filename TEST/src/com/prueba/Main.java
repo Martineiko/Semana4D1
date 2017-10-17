@@ -1,3 +1,4 @@
+package com.prueba;
 import java.util.Scanner;
 
 //Inicia Proyecto
@@ -144,6 +145,36 @@ public class Main
 		
 		cuentaPalabras ctext = new cuentaPalabras();
 		ctext.cuentaHistorias();
+		
+		cuentaPalabras cuentaPalabras;
+		System.out.println("//////////////////////Bloque try and catch\\\\\\\\\\\\\\\\\\\\");
+		//Bloque try and catch
+		//Controlar excepciones
+		//NullPointer, NumberFormat, OutofBounds, IO,
+		try
+		{
+			int contador = 0;
+			while(contador<14)
+			{
+				System.out.println((contador+1)+" : "+meses[contador]);
+				contador++;
+			}
+			
+		}catch(ArrayIndexOutOfBoundsException ex){
+			System.out.println("Excepcion: "+ex);
+		}catch(NullPointerException ex){
+			System.out.println("Excepcion: "+ex);
+		}catch(ClassCastException ex){
+			System.out.println("Excepcion: "+ex);
+		}catch(NumberFormatException ex){
+			System.out.println("Excepcion: "+ex);
+		}catch(Exception ex){
+			System.out.println("Excepcion: "+ex);
+		}finally{
+			//Bloque finally, se ejecuta sin importar si se llego a la execpcion
+			System.out.println("Bloque finally");
+		}
+		System.out.println("Saliendo del try and catch");
 	}
 
 }

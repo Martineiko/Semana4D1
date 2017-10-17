@@ -9,7 +9,7 @@
  *
  * @author MMD
  */
-class ArrayDemo {
+public class Ordenamiento {
  
     //un arreglo de 10 números enteros desordenados
     private static int numeros[] = { 7, 0, 9, 8, 1, 4, 6, 2, 3, 5 };
