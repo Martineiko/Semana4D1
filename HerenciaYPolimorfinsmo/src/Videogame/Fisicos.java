@@ -19,6 +19,7 @@ public class Fisicos extends Paga {
      */
     public void Edicion() {
         // TODO implement here
+    	System.out.println("Te costo 350 pesitos");
     }
 
 }
