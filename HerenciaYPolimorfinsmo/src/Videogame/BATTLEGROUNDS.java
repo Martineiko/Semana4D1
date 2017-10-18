@@ -9,7 +9,14 @@ public class BATTLEGROUNDS {
     /**
      * Default constructor
      */
-    public BATTLEGROUNDS() {
+    public BATTLEGROUNDS() 
+    {
+    	
+    }
+    
+    public void dispara()
+    {
+    	System.out.println("Venido un millon");
     }
 
 }
