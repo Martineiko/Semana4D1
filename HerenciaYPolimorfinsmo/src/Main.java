@@ -17,6 +17,9 @@ public class Main {
 		gris.molestar(chucho.nombre);
 		gris.comer();
 		gris.dormit();
+		
+		Garfield gato = new Garfield("Garfield");
+		System.out.println(gato.getNombre());
 	}
 
 }

@@ -1,14 +1,23 @@
 
 public class Garfield extends Animal 
 {
-	String nombre;
+	//String nombre;
 	public Garfield()
 	{
-		nombre = "Garfield";
+		super ("");
 	}
-	
+	public Garfield(String nombre)
+	{
+		super(nombre);
+	}
+	@Override
+	public void comer()
+	{
+		
+	}
 	public void comer(String comida)
 	{
+		super.comer();
 		if(comida.equalsIgnoreCase("lasagna"))
 		{
 			System.out.println("YAY!");
