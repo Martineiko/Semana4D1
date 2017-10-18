@@ -1,4 +1,4 @@
-
+package Videogame;
 import java.util.*;
 
 /**
@@ -12,11 +12,10 @@ public class PaytoWin extends FreetoPlay {
     public PaytoWin() {
     }
 
-
     /**
      * 
      */
-    public void addcard() {
+    public void meteVaro() {
         // TODO implement here
     }
 

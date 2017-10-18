@@ -4,12 +4,12 @@ import java.util.*;
 /**
  * 
  */
-public class LoL extends Microtransacciones {
+public class WorldOfTanks extends PaytoWinPC {
 
     /**
      * Default constructor
      */
-    public LoL() {
+    public WorldOfTanks() {
     }
 
 }

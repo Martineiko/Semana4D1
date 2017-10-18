@@ -4,20 +4,18 @@ import java.util.*;
 /**
  * 
  */
-public class Digitales extends Paga {
+public class DigitalesPC extends Paga {
 
     /**
      * Default constructor
      */
-    public Digitales() {
+    public DigitalesPC() {
     }
-
-
 
     /**
      * 
      */
-    public void Distribuidor() {
+    public void steam() {
         // TODO implement here
     }
 

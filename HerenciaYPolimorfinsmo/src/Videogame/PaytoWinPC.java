@@ -4,20 +4,19 @@ import java.util.*;
 /**
  * 
  */
-public class Digitales extends Paga {
+public class PaytoWinPC extends FreetoPlay {
 
     /**
      * Default constructor
      */
-    public Digitales() {
+    public PaytoWinPC() {
     }
-
 
 
     /**
      * 
      */
-    public void Distribuidor() {
+    public void addcard() {
         // TODO implement here
     }
 
