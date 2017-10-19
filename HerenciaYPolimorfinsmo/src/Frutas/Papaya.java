@@ -1,6 +1,6 @@
 package Frutas;
 
-public class Papaya 
+public class Papaya extends Frutas 
 {
 	private int Semillas;
 	public Papaya()
