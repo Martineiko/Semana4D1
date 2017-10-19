@@ -1,35 +1,61 @@
 package Frutas;
 
-public class cajaFrutas 
+public class cajaFrutas
 {
 	public Papaya[] papayas;
 	public Sandia[] sandias;
 	public Banana[] bananas;
+	
 	public cajaFrutas()
 	{
 		
 	}
-	public void Metodo()
+	
+	/*public String[] getAllFruits()
 	{
-		
-		for(int x = 0; x < papayas.length; x++)
-		{
-			System.out.println("Papaya numero: #"+(x+1));
-			System.out.println("Semillas: "+papayas[x].getSemillas());
-			System.out.println("Dias para expiracion: "+papayas[x].getExpiracion());
+		int x=0;
 			
+		for (int i=0;i<papayas.length;i++)
+		{
+			allFruits[x]="Papaya #"+i+" , " + papayas[i].getExpiracion();
+			x++;
+		}			
+		for (int i=0;i<sandias.length;i++)
+		{				
+			allFruits[x]="Sandia #"+i+" , " + sandias[i].getExpiracion();
+			x++;
 		}
-		for(int y = 0; y < bananas.length; y++)
-		{
-			System.out.println("Banana numero: #"+(y+1));
-			System.out.println("Dias para expiracion: "+bananas[y].getExpiracion());
 			
+		for (int i=0;i<bananas.length;i++)
+		{
+			allFruits[x]="Banana #"+i+" , " + bananas[i].getExpiracion();
+			x++;
 		}
-		for(int z = 0; z < sandias.length; z++)
-		{
-			System.out.println("Sandia numero: #"+(z+1));
-			System.out.println("Dias para expiracion: "+sandias[z].getExpiracion());
 			
+		return allFruits;
+	}*/
+	
+	public void getTodas()
+	{
+		for (int i=0;i<papayas.length;i++)
+		{
+			System.out.println("Papaya #"+(i+1));
+			System.out.println("Semillas: "+ papayas[i].getSemillas());
+			System.out.println("Expiración: "+ papayas[i].getExpiracion());
+			System.out.println();
+		}
+		for (int i=0;i<sandias.length;i++)
+		{
+			System.out.println("Sandia #"+(i+1));
+			System.out.println("Expiración: "+ sandias[i].getExpiracion());
+			System.out.println();
+		}
+		for (int i=0;i<bananas.length;i++)
+		{
+			System.out.println("Banana #"+(i+1));
+			System.out.println("Expiración: "+ bananas[i].getExpiracion());
+			System.out.println();
 		}
 	}
+	
 }

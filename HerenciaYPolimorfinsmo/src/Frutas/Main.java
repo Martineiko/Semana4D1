@@ -1,61 +1,123 @@
 package Frutas;
 
-public class Main {
-
-	public static void main(String[] args) 
+public class Main 
+{
+	public static void main(String[] args)
 	{
-		// TODO Auto-generated method stub
-		//Papaya
+		Refrigerador refri = new Refrigerador();
+		refri.setTemperatura(4);
+		
+		// Creando nueva papaya y seteando su expiración
 		Papaya papaya = new Papaya();
 		papaya.setExpiracion(5);
-		//Sandia
+		
+		// Creando nueva sandia y seteando su expiración
 		Sandia sandia = new Sandia();
 		sandia.setExpiracion(7);
-		//Banana
+		
+		// Creando nueva banana y seteando su expiración
 		Banana banana = new Banana();
 		banana.setExpiracion(3);
-		//Arreglo para llenar la caja
+		
+		//Creando nueva eddo
+		Eddo eddo = new Eddo();
+		eddo.setExpiracion(3);
+		
+		//Creando Jen
+		Jengibre jengibre = new Jengibre();
+		jengibre.setExpiracion(5);
+		
+		//Creando Yuca
+		Yuca yuca = new Yuca();
+		yuca.setExpiracion(10);
+		//Arreglos para cargar el contenido
 		Papaya[] papayas = new Papaya[4];
 		Sandia[] sandias = new Sandia[5];
 		Banana[] bananas = new Banana[3];
-		//Caja de frutas para mover la fruta
-				cajaFrutas caja = new cajaFrutas();
-				caja.bananas = bananas;
-				caja.papayas = papayas;
-				caja.sandias = sandias;
-				
-		//Refrigerador nuevo
-				Refrigerador refri = new Refrigerador();
-				refri.setTemperatura(4);
-				refri.setCaja(caja);
-				
-		/*//Bucle
-		for(int x = 0; x < papayas.length; x++)
+		Yuca[] yucas = new Yuca[4];
+		Jengibre[] jengibres = new Jengibre[5];
+		Eddo[] eddos = new Eddo[3];
+		
+		// Llenando arreglo de papayas
+		for (int x=0; x<papayas.length;x++)
 		{
-			papayas[x] = papaya;
+			papayas[x]=papaya;
 		}
-		for(int y = 0; y < sandias.length; y++)
+		// Llenando arreglo de sandias
+		for (int x=0; x<sandias.length;x++)
 		{
-			sandias[y] = sandia;
+			sandias[x]=sandia;
 		}
-		for(int z = 0; z < bananas.length; z++)
+		// Llenando arreglo de bananas
+		for (int x=0; x<bananas.length;x++)
 		{
-			bananas[z] = banana;
+			bananas[x]=banana;
 		}
-		for(int i = 0; i < refri.getCaja().papayas.length; i++)
+		// Llenando arreglo de yucas
+		for (int x=0; x<yucas.length;x++)
 		{
-			System.out.println("Papaya numero: #"+(i+1));
-			System.out.println("Semillas: "+refri.getCaja().papayas[i].getSemillas());
-			System.out.println("Dias para expiracion: "+refri.getCaja().papayas[i].getExpiracion());
-			System.out.println("\n");
+			yucas[x]=yuca;
 		}
-		for(int i = 0; i < refri.getCaja().bananas.length; i++)
+		// Llenando arreglo de jengibres
+		for (int x=0; x<jengibres.length;x++)
 		{
-			System.out.println("Banana numero: #"+(i+1));
-			System.out.println("Dias para expiracion: "+refri.getCaja().bananas[i].getExpiracion());
-			System.out.println("\n");
+			jengibres[x]=jengibre;
+		}
+		// Llenando arreglo de eddos
+		for (int x=0; x<eddos.length;x++)
+		{
+			eddos[x]=eddo;
+		}
+		
+		// Creando una nueva caja de frutas
+		cajaFrutas cajaFrutas = new cajaFrutas();
+		
+		// Llenando cajaFrutas de las frutas que se metieron en los arreglos anteriores
+		cajaFrutas.papayas=papayas;
+		cajaFrutas.sandias=sandias;
+		cajaFrutas.bananas=bananas;
+		
+		//Creando una nueva caja de verduras
+		cajaVerduras cajaVer = new cajaVerduras();
+		
+		// Llenando cajaVer de las verduras que se metieron en los arreglos anteriores
+		cajaVer.yucas=yucas;
+		cajaVer.eddos=eddos;
+		cajaVer.jengibres=jengibres;
+		
+		//  Poner la caja de frutas en el refri
+		refri.setCaja(cajaFrutas);
+		
+		//Poner la caja de verduras en el refri
+		refri.setCajaVer(cajaVer);
+		//Obtener la caja
+		refri.getCaja().getTodas();
+		//Obtener verduras
+		refri.getCajaVer().getVerduras();
+		
+		// Ver una fruta de la caja que está en el refri
+		
+		/*for (int i=0;i<refri.getCajafrutas().papayas.length;i++)
+		{
+			System.out.println("Papaya #"+(i+1));
+			System.out.println("Semillas: "+ refri.getCajafrutas().papayas[i].getSemillas());
+			System.out.println("Expiración: "+ refri.getCajafrutas().papayas[i].getExpiracion());
+			System.out.println();
+		}
+		for (int i=0;i<refri.getCajafrutas().sandias.length;i++)
+		{
+			System.out.println("Sandia #"+(i+1));
+			System.out.println("Expiración: "+ refri.getCajafrutas().sandias[i].getExpiracion());
+			System.out.println();
+		}
+		for (int i=0;i<refri.getCajafrutas().bananas.length;i++)
+		{
+			System.out.println("Banana #"+(i+1));
+			System.out.println("Expiración: "+ refri.getCajafrutas().bananas[i].getExpiracion());
+			System.out.println();
 		}*/
-				refri.getCaja().Metodo();
+		
+		
 	}
 
 }
