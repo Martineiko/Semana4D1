@@ -1,10 +1,11 @@
 package Frutas;
 
-public class Refrigerador 
+public class Refrigerador implements Clavija //se implementa la interface clavija
 {
 	private int temperatura;
 	private cajaFrutas caja;
 	private cajaVerduras cajaVer;
+	int voltaje;
 	public Refrigerador()
 	{
 		
@@ -31,4 +32,14 @@ public class Refrigerador
 	public cajaVerduras getCajaVer() {
 		return this.cajaVer;
 	}
+	@Override //Sobreescribe el metodo de la interface clavija
+	public void conectarse() {
+		// TODO Auto-generated method stub
+		 voltaje = 220;
+	}
+	/*@Override
+	public String loQueSea(String algo) {
+		// TODO Auto-generated method stub
+		return null;
+	}*/
 }

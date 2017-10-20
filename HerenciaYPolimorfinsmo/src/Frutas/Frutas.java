@@ -1,6 +1,6 @@
 package Frutas;
 
-public class Frutas 
+abstract class Frutas 
 {
 	private String color;
 	private String tamanio;
@@ -32,4 +32,6 @@ public class Frutas
 	public String getTamanio() {
 		return tamanio;
 	}
+	
+	abstract void descomponer();
 }

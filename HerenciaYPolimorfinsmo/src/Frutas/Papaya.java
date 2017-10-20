@@ -15,4 +15,9 @@ public class Papaya extends Frutas
 	{
 		return Semillas;
 	}
+	@Override
+	void descomponer() {
+		// TODO Auto-generated method stub
+		
+	}
 }

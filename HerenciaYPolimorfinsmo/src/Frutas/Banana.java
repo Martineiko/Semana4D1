@@ -6,4 +6,10 @@ public class Banana extends Frutas
 	{
 		
 	}
+
+	@Override
+	void descomponer() {
+		// TODO Auto-generated method stub
+		
+	}
 }
